@@ -1,0 +1,60 @@
+:root{
+  --bg: linear-gradient(180deg,#e6f7ff,#fff);
+  --card-bg: rgba(255,255,255,0.85);
+  --accent: #1e293b;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, Arial, sans-serif;
+  background: linear-gradient(180deg,#f0f7ff,#ffffff);
+  transition: background 0.5s ease;
+  color: #0f172a;
+}
+body.clear { background: linear-gradient(180deg,#ffe680,#fff); }
+body.cloudy { background: linear-gradient(180deg,#dfe9f3,#ffffff); }
+body.rainy { background: linear-gradient(180deg,#cfd9e8,#eef2f7); }
+body.snowy { background: linear-gradient(180deg,#eaf6ff,#ffffff); }
+body.default-bg { background: linear-gradient(180deg,#f0f7ff,#ffffff); }
+
+.container{
+  max-width:720px;
+  margin:48px auto;
+  padding:24px;
+}
+
+.title { text-align:center; margin:0 0 16px; font-size:28px; font-weight:700; }
+
+.search-area { display:flex; flex-direction:column; gap:12px; margin-bottom:16px; }
+.search-form { display:flex; gap:8px; }
+.search-input { flex:1; padding:10px 12px; border-radius:8px; border:1px solid #cbd5e1; font-size:14px; }
+.search-btn { padding:10px 14px; border-radius:8px; border:none; background:#0ea5a3; color:white; cursor:pointer; font-weight:600; }
+
+.recent { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-top:6px; }
+.recent-list { display:flex; gap:8px; flex-wrap:wrap; }
+.recent-item { background:transparent; border:1px solid rgba(15,23,42,0.08); padding:6px 10px; border-radius:999px; cursor:pointer; }
+
+.loader, .error { text-align:center; margin:16px 0; font-weight:600; }
+
+.card {
+  margin-top:16px;
+  background: var(--card-bg);
+  border-radius:12px;
+  padding:18px;
+  box-shadow: 0 6px 20px rgba(16,24,40,0.08);
+}
+.card-header { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.card h2 { margin:0; font-size:20px; }
+.weather-main { display:flex; gap:12px; align-items:center; }
+.weather-main img { width:72px; height:72px; }
+.temp { font-size:32px; font-weight:700; }
+.desc { text-transform:capitalize; opacity:0.9; }
+
+.card-body { display:flex; gap:12px; margin-top:12px; flex-wrap:wrap; }
+.stat { flex:1 1 45%; background:rgba(255,255,255,0.6); border-radius:8px; padding:10px; }
+.label { font-size:12px; color:#475569; }
+.value { font-weight:700; margin-top:6px; font-size:16px; }
+
+.footer { text-align:center; margin-top:18px; opacity:0.8; font-size:13px; }
