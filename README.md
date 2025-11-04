@@ -24,3 +24,21 @@ It allows users to search for any city and view the current weather details such
 ---
 
 ## 🧩 Project Structure
+Weather-Now/
+├── Client/ # Frontend (React + Vite + Tailwind)
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ └── App.jsx
+│ ├── package.json
+│ └── vite.config.js
+│
+├── Server/ # Backend (Node.js + Express)
+│ ├── index.js
+│ ├── routes/
+│ └── package.json
+│
+├── weather-now/ # Environment/config folder (optional)
+├── package.json
+├── package-lock.json
+└── README.md
